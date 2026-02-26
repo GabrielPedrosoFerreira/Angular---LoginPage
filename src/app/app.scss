@@ -1,0 +1,76 @@
+:host{
+    display: flex;
+    height: 100%;
+
+    .left-side{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 71px;
+        flex: 1;
+        background-color: #181818;
+        padding: 10px;
+
+        img{
+            max-width: 200px;
+            max-height: 87.92px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            width: 100%;
+            max-width: 75%;
+
+            .wrapper-field{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                label{
+                    color: white;
+                    font-size: 13px;
+
+                }
+
+                .error-message-container{
+                    span{
+                        color: red;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            button{
+                padding: 17px;
+                background-color: #ff0040;
+                color: white;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+    .right-side{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 39px;
+        background-image: url(../../public/bg-right.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        h1{
+            color: white;
+            font-weight: 400;
+            font-size: 45px;
+        }
+
+        a{
+            width: 420px;
+        }
+    }
+}
